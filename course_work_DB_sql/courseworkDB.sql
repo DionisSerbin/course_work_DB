@@ -150,24 +150,3 @@ create table if not exists PlaceFormats (
     PRIMARY KEY (formatID, placeID)
 );
 
-INSERT INTO User (userID, userName) VALUES (UUID_TO_BIN(UUID()), 'sluolp');
-
-SELECT COUNT(userID) FROM User WHERE userName = 'sluolp';
-
-DELETE FROM User where userName = 'sluolp';
-DELETE FROM Admin where adminName = 'sluolp';
-DELETE FROM Place where true;
-DELETE FROM Address where true;
-DELETE FROM PlaceAddresses where true;
-DELETE FROM Metro where true;
-DELETE FROM PlaceMetros where true;
-DELETE FROM User where userName = 'shulpina_al';
-DELETE FROM Admin where adminName = 'shulpina_al';
-
-UPDATE Admin SET adminEmail = 'xui' WHERE adminName = 'sluolp';
-
-INSERT INTO Place (placeID, adminID) VALUES (UUID_TO_BIN(UUID()), (SELECT adminID FROM Admin WHERE adminName = 'sluolp'));
-
-Update Place set placeDogFriendly = true WHERE placeName = 'xui';
-
-SELECT DISTINCT metroName FROM Metro ORDER BY metroName
