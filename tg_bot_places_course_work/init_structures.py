@@ -14,7 +14,7 @@ mydb = mysql.connector.connect(
 cursor = mydb.cursor()
 
 
-bot = telebot.TeleBot("5256330090:AAEj86lm7Y0zAXI2pKwjN1geNcAiQ7Gcn_c",
+bot = telebot.TeleBot("5256330090:AAEj86lm7Y0zAXI2pKwjN1geNcAiQ7Gcn",
                       parse_mode=None)
 
 path_photo_bot = "coursework_bd_photo/"
